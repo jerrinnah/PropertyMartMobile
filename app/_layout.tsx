@@ -1,6 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
-import { SplashScreen, Stack } from 'expo-router';
+import { Slot, SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { TamaguiProvider } from 'tamagui'
 import config from '../tamagui.config';
@@ -24,7 +24,10 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const [loaded, error] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-    BasierRegular: require('../assets/fonts/basier.ttf'),
+    BasierRegular: require('../assets/fonts/BasierRegular.otf'),
+    BasierMedium: require('../assets/fonts/BasierMedium.otf'),
+    BasierSemiBold: require('../assets/fonts/BasierSemiBold.otf'),
+    BasierBold: require('../assets/fonts/BasierBold.otf'),
     ...FontAwesome.font,
   });
 
@@ -53,11 +56,7 @@ function RootLayoutNav() {
     <QueryClientProvider client={queryClient}>
        <ThemeProvider theme={theme}>
         <TamaguiProvider config={config}>
-          <Stack initialRouteName='lands'>
-            <Stack.Screen name='index' options={{ headerShown: false }} />
-            <Stack.Screen name='lands' options={{ headerShown: false }} />
-            <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-          </Stack>
+          <Stack screenOptions={{ headerShown: false }} />
         </TamaguiProvider>
        </ThemeProvider>
     </QueryClientProvider>

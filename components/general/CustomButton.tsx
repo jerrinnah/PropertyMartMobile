@@ -10,7 +10,7 @@ interface IProps {
   isLoading?: boolean;
   width: number | string;
   height?: number | string;
-  isDisabled: boolean;
+  isDisabled?: boolean;
 }
 
 export const PrimaryButton = ({

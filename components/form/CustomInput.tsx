@@ -40,7 +40,7 @@ import {
         {props.showLabel ||
           (props.showLabel === undefined && (
             <Box flexDirection="row">
-              <CustomText variant="xs" fontFamily="RedRegular" marginBottom="s">
+              <CustomText variant="xs"  marginBottom="sm">
                 {props.label || props.placeholder}
               </CustomText>
               {props.required && (
@@ -54,7 +54,7 @@ import {
             required: props.required || false,
           }}
           name={props.name}
-          render={({ field: { onChange, value } }) => {
+          render={({ field: { onChange, value }, formState: { isValid } }) => {
             const handleInputChange = (text: string) => {
               // Remove special characters using a regular expression
               const filteredText = text.replace(/[^\w\s]/gi, "");
@@ -75,7 +75,7 @@ import {
                         ? theme.colors.primaryColor
                         : errors[props.name]
                         ? 'red'
-                        : theme.colors.inputBorderColorLight,
+                        : theme.colors.textInputBorderColor,
                   },
                 ]}
               >
@@ -104,14 +104,14 @@ import {
                     secureTextEntry={props.isPassword ? showPassword : false}
                     style={{
                       color: theme.colors.textColor,
-                      fontFamily: "RedRegular",
+                      fontFamily: "BasierRegular",
                     }}
                   />
                 </Box>
                 {props.isPassword && (
                   <Ionicons
                     onPress={() => setShowPassword((prev) => !prev)}
-                    name={showPassword ? "eye" : "eye-off"}
+                    name={showPassword ? "eye-outline" : "eye-off-outline"}
                     size={25}
                     color={theme.colors.textColor}
                   />
@@ -121,7 +121,7 @@ import {
           }}
         />
         {errors[props.name] && (
-          <CustomText variant="xs" style={{ color: "red" }}>
+          <CustomText variant="xs" marginTop={'xs'} style={{ color: "red" }}>
             {errors[props.name]?.message as any}
           </CustomText>
         )}
@@ -132,7 +132,7 @@ import {
   const Style = StyleSheet.create({
     parent: {
       width: "100%",
-      height: 52,
+      height: 45,
       borderRadius: 12,
       borderWidth: 1,
       flexDirection: "row",

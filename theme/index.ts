@@ -42,22 +42,28 @@ const theme = createTheme({
   },
   textVariants: {
     header: {
-      fontSize: 30,
+      fontSize: 36,
       color: "headerTextColor",
-      fontFamily: "BasierRegular",
+      fontFamily: "BasierBold",
+      lineHeight: 44,
+      letterSpacing: .72,
     },
     subheader: {
       fontSize: 24,
       color: "headerTextColor",
-      fontFamily: "BasierRegular",
+      fontFamily: "BasierSemiBold",
+      lineHeight: 32,
+      letterSpacing: 0.24,
     },
     body: {
-      fontSize: 16,
+      fontSize: 18,
       color: "textColor",
       fontFamily: "BasierRegular",
+      lineHeight: 24,
+      letterSpacing: 0.32,
     },
     xs: {
-      fontSize: 14,
+      fontSize: 16,
       color: "textColor",
       fontFamily: "BasierRegular",
     },

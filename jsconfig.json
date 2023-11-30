@@ -8,7 +8,8 @@
         "@types/*": ["types/*"],
         "@views/*": ["views/*"],
         "@theme/*": ["theme/*"],
-        "@constants": ["constants/*"]
+        "@constants": ["constants/*"],
+        "@services/*": ["services/*"],
       }
     },
     "exclude": ["node_modules"]

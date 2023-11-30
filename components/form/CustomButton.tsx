@@ -32,10 +32,10 @@ export const SubmitButton = ({
         onPress={handleSubmit(onSubmit)}
         style={{
           width: width as any,
-          height: 52,
+          height: 44,
           backgroundColor:
-            !isDirty || !isValid ? "#B8E0C2" : theme.colors.primaryColor,
-          borderRadius: 50,
+            !isDirty || !isValid ? theme.colors.disabledButtonColor : theme.colors.primaryColor,
+          borderRadius: 10,
           justifyContent: "center",
           alignItems: "center",
         }}
