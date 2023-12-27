@@ -1,7 +1,5 @@
 import { createTokens } from 'tamagui';
 
-
-
 export const tokens = createTokens({
     color: {
         disabledBtnBg: '#A0BDF9',

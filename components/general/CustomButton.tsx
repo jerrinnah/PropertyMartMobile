@@ -38,7 +38,7 @@ export const PrimaryButton = ({
         }}
       >
         <CustomText
-          variant="header"
+          // variant=""
           fontSize={14}
           color={'white'}
         >

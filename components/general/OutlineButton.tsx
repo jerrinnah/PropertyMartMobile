@@ -40,7 +40,7 @@ export const OutlineButton = ({
         }}
       >
         <CustomText
-          variant="header"
+          variant="subheader"
           fontSize={14}
           color={'black'}
         >
