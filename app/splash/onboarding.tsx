@@ -26,7 +26,7 @@ const Onboarding = () => {
                     color={'black'} fontWeight={'800'}>Find Your Perfect Property Match</CustomText>
                     <Box style={[Styles.flex, {padding:10} ]}>
                         <Box style={{width:'80%'}}>
-                        <CustomText variant={'subheader'} textAlign={'center'} fontSize={10} lineHeight={14} 
+                        <CustomText variant={'subheader'} textAlign={'center'} fontSize={16} lineHeight={14} 
                         color={'black'} >
                             Discover, invest, and claim your space in the real estate market.</CustomText>
                         </Box>
