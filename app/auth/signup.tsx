@@ -28,7 +28,7 @@ const Signup = () => {
   const [otpInput_4, setOtpInput_4] = useState('');
   const [otpInput_5, setOtpInput_5] = useState('');
   const [otpNumber, setOtpNumber] = useState('08132581551');
-  const [step,setStep ] = useState(0);
+  const [step,setStep ] = useState(1);
   
   const handleOtpInput_1Change = (text: any) => {
     // Ensure that the input contains only numbers
@@ -257,7 +257,7 @@ const Signup = () => {
                   </Box>
                 </Box>
                 
-              </Box>
+            </Box>
             </> 
             : null
           }
