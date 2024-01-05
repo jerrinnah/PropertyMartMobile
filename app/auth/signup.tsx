@@ -120,7 +120,7 @@ const Signup = () => {
 
                   <Box flexDirection={'row'} width='100%' justifyContent={'center'} alignItems={'center'}>
                     <CustomText variant={'xs'} fontSize={12}>Already a user?</CustomText>
-                    <Link href={'/auth/signup'} style={{ marginLeft: 4 }}>
+                    <Link href={'/auth/login'} style={{ marginLeft: 4 }}>
                     <CustomText variant={'body'} fontSize={12} fontWeight={'800'} color={'primaryColor'} marginLeft={'xs'}>Log in</CustomText>
                     </Link>
                   </Box>
