@@ -93,6 +93,13 @@ const  ForgotPassword = () => {
               <Box width='100%' marginTop={'xl'} height={40} justifyContent={'center'} alignItems={'flex-end'}>
               <SubmitButton label='Request OTP' width='100%'  onSubmit={() => {}} />
               </Box>
+              <Box height={'62%'} flexDirection={'row'} alignItems={'flex-end'}>
+                    <Box height={5} width={'100%'}  flexDirection={'row'} justifyContent={'center'} >
+                        <Box height={5} width={'30%'} backgroundColor={'black'} borderRadius={10}>
+                            <CustomText>Hello</CustomText>
+                        </Box>
+                    </Box>
+              </Box>
             </> 
             :
             step === 1?
@@ -158,6 +165,13 @@ const  ForgotPassword = () => {
               <Box width='100%' marginTop={'lg'} height={40} justifyContent={'center'} alignItems={'center'}>
                  <CustomText variant={'xs'}>Didn’t get a code? <Text style={{color:'#2D66DD', fontWeight:'600'}}>Resend</Text> (0:05s)</CustomText>
               </Box>
+              <Box height={'50%'} flexDirection={'row'} alignItems={'flex-end'}>
+                    <Box height={5} width={'100%'}  flexDirection={'row'} justifyContent={'center'} >
+                        <Box height={5} width={'30%'} backgroundColor={'black'} borderRadius={10}>
+                            <CustomText>Hello</CustomText>
+                        </Box>
+                    </Box>
+                  </Box>
             </Box>
             :
             step === 2?
