@@ -35,7 +35,8 @@ const _layout = () => {
                 fontSize: 12,
             }
         }} />
-        <Tabs.Screen name='wallet' options={{
+          <Tabs.Screen name='wallet' options={{
+              headerShown: (false),
             tabBarIcon: ({ focused}) => <Icon focused={focused} name={'wallet-outline'} />,
             tabBarLabelStyle: {
                 fontSize: 12,
