@@ -8,7 +8,6 @@ export const Styles = StyleSheet.create({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-
   },
 
   walletBal: {
@@ -103,38 +102,66 @@ export const Styles = StyleSheet.create({
 
   icon: {
     paddingRight: 15,
-    },
-  
-  
-    //   FUND WALLET STYLES 
-  
-    fundWallet: {
-        height: '100%',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems:'center'
-    },
+  },
 
-    amountCont: {
-        height: 250,
-        width: '80%',
-        justifyContent: 'center',
-        alignItems: 'center',
-        alignSelf:'center'
-    },
-    amount: {
-        height: 190,
-        width:'80%',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems:'center'
-    },
-    method: {
-        height: 100,
-        width: '90%',
-        backgroundColor:'red'
-    }
+  //   FUND WALLET STYLES
 
-  
+  fundWallet: {
+    height: '100%',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+
+  amountCont: {
+    height: 250,
+    width: '80%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
+  amount: {
+    height: 100,
+    width: '80%',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    // backgroundColor:'red'
+   
+  },
+  amountValue: {
+    fontSize: 49,
+    fontFamily: "BasierSemiBold",
+    // lineHeight: 45,
+    letterSpacing: 0.24,
+    alignSelf: 'center',
+    
+  },
+  method: {
+    height: 100,
+    width: '90%',
+    // backgroundColor:'red'
+  },
+  label: {
+    position: 'absolute',
+    backgroundColor: 'white',
+    left: 22,
+    top: 8,
+    zIndex: 999,
+    paddingHorizontal: 8,
+    fontSize: 14,
+  },
+
+  select: {
+    height: 56,
+    width: 376,
+    borderRadius: 10,
+    borderWidth: 1,
+    outlineColor: 'black',
+    opacity: 0.3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding:10,
+  },
 });
