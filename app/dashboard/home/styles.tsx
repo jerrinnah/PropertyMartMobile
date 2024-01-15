@@ -72,9 +72,10 @@ export const Styles = StyleSheet.create({
   modalBox: {
     height: 250,
     backgroundColor: 'white',
-    // borderRadius: 20,
+    borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
+    top:650,
   },
 
   modalHeader: {
@@ -127,21 +128,17 @@ export const Styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    // backgroundColor:'red'
-   
   },
   amountValue: {
     fontSize: 49,
-    fontFamily: "BasierSemiBold",
+    fontFamily: 'BasierSemiBold',
     // lineHeight: 45,
     letterSpacing: 0.24,
     alignSelf: 'center',
-    
   },
   method: {
     height: 100,
     width: '90%',
-    // backgroundColor:'red'
   },
   label: {
     position: 'absolute',
@@ -162,6 +159,160 @@ export const Styles = StyleSheet.create({
     opacity: 0.3,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10,
+  },
+
+
+
+
+
+
+
+
+
+
+  //   ADD DEBIT CARD STYLES
+
+  cardCont: {
+    height: '100%',
+  },
+
+  frmLaout: {
+    minHeight: 280,
+    justifyContent: 'center',
+    // backgroundColor:'green'
+  },
+  cardDt: {
+    height: 442,
+    width: 396,
+    alignSelf: 'center',
+    // paddingTop: 10,
+    padding: 10,
+    alignItems: 'center',
+  },
+
+  cardInfo: {
+    paddingTop: 10,
+  },
+
+  bg: {
+    flex:1,
+    width: '100%',
+    backgroundColor: 'black',
+    opacity:0.7
+  },
+
+  inputCont: {
+    height: 44,
+    borderWidth: 1,
+    borderColor: '#d8d8d8',
+    borderRadius: 8,
+    padding: 10,
+  },
+
+  name: {
+    paddingBottom: 5,
+    paddingTop: 5,
+  },
+
+  date: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingTop: 10,
+  },
+
+  inputCt: {
+    height: 45,
+    width: '48%',
+  },
+
+  inputDate: {
+    height: 44,
+    width: '100%',
+    borderWidth: 1,
+    borderColor: '#d8d8d8',
+    borderRadius: 8,
+    padding: 10,
+  },
+
+  imgContainer: {
+    top: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 20,
+    // backgroundColor:'red'
+  },
+
+  img: {
+    // width:100,
+    // height:80,
+  },
+
+  // infoCont: {
+  //   marginRight: 40,
+  // marginLeft: 40,
+  // marginTop: 10,
+  // paddingTop: 20,
+  // paddingBottom: 20,
+  // backgroundColor: '#68a0cf',
+  // borderRadius: 10,
+  // borderWidth: 1,
+  // // borderColor: 'blue',
+  // },
+
+
+  full: {
+    top: 600,
+    height: 355,
+    backgroundColor: 'white',
+    borderRadius: 20,
+   padding:10,
+    
+  },
+
+  textContent: {
+    height: 90,
+    width: '100%',
+    borderRadius:20,
+  },
+
+  modalTitle: {
+    paddingTop: 20,
+    paddingLeft: 10,
+    margin:10,
+  },
+
+  textPaystack: {
+    height:150,
+    width: '100%',
+    // backgroundColor: 'red',
     padding:10,
   },
+
+  insufBtn: {
+    borderWidth: 1,
+    borderColor: 'red',
+    width: 133,
+    height: 28,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 20,
+    paddingLeft: 10,
+    paddingRight: 10,
+    marginRight:110,
+    
+  },
+
+  balanceAlert: {
+    flexDirection: 'row',
+    justifyContent:'space-between'
+  }
+
+
+
+
+
+  // BANK TRANSFER
+
+  
 });
