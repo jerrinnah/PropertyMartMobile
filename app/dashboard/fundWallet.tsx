@@ -11,15 +11,17 @@ import { CustomTextInput } from '@component/form/CustomInput';
 import { TextInput } from 'react-native';
 import { SubmitButton } from '@component/form/CustomButton';
 import { router } from 'expo-router';
+import { PrimaryButton } from '@component/general/CustomButton';
 
 function fundWallet() {
   const [amount, setAmount] = useState('');
+ 
 
   return (
     <SafeAreaView>
       <Box style={Styles.fundWallet}>
         <Box paddingRight={'xl'} paddingTop={'3xl'}>
-          <Ionicons name="arrow-back-outline" size={35} />
+          <Ionicons name="arrow-back-outline" size={35} onPress={()=> router.back()}  />
           <CustomText variant={'subheader'} fontSize={20}>
             How much do you want to fund?
           </CustomText>
@@ -50,7 +52,7 @@ function fundWallet() {
             <DropdownPicker />
           </Box>
         </Box>
-        {/* <SubmitButton  label={'Submit'} width={'90'}/> */}
+        <PrimaryButton onPress={()=>router.push('/dashboard/AddCard') } label={'Continue'} width={'90%'}/>
       </Box>
     </SafeAreaView>
   );

@@ -37,7 +37,8 @@ const Wallets = () => {
             setModalVisible(!modalVisible);
           }}
         >
-          <ModalScreen />
+          
+
           <Box style={Styles.modalBox}>
             <Box style={Styles.modalHeader}>
               <CustomText variant={'subheader'} paddingLeft={'7xl'}>
@@ -83,6 +84,8 @@ const Wallets = () => {
               </TouchableOpacity>
             </Box>
           </Box>
+
+          
         </Modal>
 
         <Box height={'40%'} paddingTop={'sm'}>
