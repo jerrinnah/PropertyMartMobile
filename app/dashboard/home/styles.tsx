@@ -75,7 +75,7 @@ export const Styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    top:650,
+    top: 650,
   },
 
   modalHeader: {
@@ -162,15 +162,6 @@ export const Styles = StyleSheet.create({
     padding: 10,
   },
 
-
-
-
-
-
-
-
-
-
   //   ADD DEBIT CARD STYLES
 
   cardCont: {
@@ -196,10 +187,10 @@ export const Styles = StyleSheet.create({
   },
 
   bg: {
-    flex:1,
+    flex: 1,
     width: '100%',
     backgroundColor: 'black',
-    opacity:0.7
+    opacity: 0.7,
   },
 
   inputCont: {
@@ -260,33 +251,31 @@ export const Styles = StyleSheet.create({
   // // borderColor: 'blue',
   // },
 
-
   full: {
     top: 600,
     height: 355,
     backgroundColor: 'white',
     borderRadius: 20,
-   padding:10,
-    
+    padding: 10,
   },
 
   textContent: {
     height: 90,
     width: '100%',
-    borderRadius:20,
+    borderRadius: 20,
   },
 
   modalTitle: {
     paddingTop: 20,
     paddingLeft: 10,
-    margin:10,
+    margin: 10,
   },
 
   textPaystack: {
-    height:150,
+    height: 150,
     width: '100%',
     // backgroundColor: 'red',
-    padding:10,
+    padding: 10,
   },
 
   insufBtn: {
@@ -299,20 +288,124 @@ export const Styles = StyleSheet.create({
     borderRadius: 20,
     paddingLeft: 10,
     paddingRight: 10,
-    marginRight:110,
-    
+    marginRight: 110,
   },
 
   balanceAlert: {
     flexDirection: 'row',
-    justifyContent:'space-between'
-  }
-
-
-
-
+    justifyContent: 'space-between',
+  },
 
   // BANK TRANSFER
 
-  
+  bankTransfrCont: {
+    flexDirection: 'column',
+    height: 150,
+    width: '100%',
+    marginTop: 10,
+  },
+
+  bankTrnsfr: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 10,
+    // backgroundColor: 'red',
+    height: 96,
+    width: '100%',
+    marginBottom: 20,
+  },
+
+  amountCtn: {
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    padding: 5,
+  },
+
+  amountTrans: {
+    paddingLeft: 60,
+  },
+
+  subHead: {
+    paddingLeft: 20,
+    marginBottom: 20,
+  },
+
+  details: {
+    height: 55,
+    width: '100%',
+    // backgroundColor: 'green',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 10,
+  },
+
+  copyBtn: {
+    height: 36,
+    width: 84,
+    borderWidth: 1,
+    borderColor: '#A0BDF9',
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: '#A0BDF9',
+  },
+
+  ////////////////////////////////////////
+
+  // WITHDRAW FUNDS
+
+  emptyBank: {
+    height: 484,
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 30,
+  },
+  banks: {
+    height: 192,
+    width: 332,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  binImg: {
+    height: 104,
+    width: 104,
+    marginBottom: 15,
+  },
+
+  emptyDetails: {
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+
+  /////////////
+
+  // ADD BANK ACCOUNT
+
+  addBankAcctCnt: {
+    justifyContent: 'center',
+  },
+
+  selectBank: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  accountDetail: {
+    fontSize: 19,
+    letterSpacing: 0.24,
+    alignSelf: 'center',
+    height: 44,
+    width: 366,
+    borderWidth: 1,
+    borderColor: 'grey',
+    borderRadius: 10,
+    marginBottom: 5,
+  },
+
+  bnk: {
+    marginBottom:10,
+  }
 });
