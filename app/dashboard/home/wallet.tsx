@@ -37,8 +37,6 @@ const Wallets = () => {
             setModalVisible(!modalVisible);
           }}
         >
-          
-
           <Box style={Styles.modalBox}>
             <Box style={Styles.modalHeader}>
               <CustomText variant={'subheader'} paddingLeft={'7xl'}>
@@ -66,7 +64,10 @@ const Wallets = () => {
                 </Box>
               </TouchableOpacity>
 
-              <TouchableOpacity onPress={() => {}}>
+              <TouchableOpacity
+                onPress={() => router.push('/dashboard/BankTransfer')}
+                onPressOut={()=> setModalVisible(false)}
+              >
                 <Box style={Styles.cardRow}>
                   <Ionicons
                     name="business-outline"
@@ -84,8 +85,6 @@ const Wallets = () => {
               </TouchableOpacity>
             </Box>
           </Box>
-
-          
         </Modal>
 
         <Box height={'40%'} paddingTop={'sm'}>
